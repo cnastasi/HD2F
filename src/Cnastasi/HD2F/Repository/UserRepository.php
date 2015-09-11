@@ -1,8 +1,8 @@
 <?hh //strict
 
-namespace Cnastasi\HD3F\Repository;
+namespace Cnastasi\HD2F\Repository;
 
-use Cnastasi\HD3F\Model\UserModel;
+use Cnastasi\HD2F\Model\UserModel;
 
 interface UserRepository extends Repository<UserModel> {
 

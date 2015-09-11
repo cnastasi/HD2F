@@ -1,8 +1,8 @@
 <?hh //strict
 
-namespace Cnastasi\HD3F\Repository;
+namespace Cnastasi\HD2F\Repository;
 
-use Cnastasi\HD3F\Model\IdentityModel;
+use Cnastasi\HD2F\Model\IdentityModel;
 
 abstract class InMemoryRepository<T as IdentityModel> implements Repository<T> {
 	private Map<mixed, T> $items;

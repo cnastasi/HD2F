@@ -1,6 +1,6 @@
 <?hh //strict
 
-namespace Cnastasi\HD3F\Model;
+namespace Cnastasi\HD2F\Model;
 
 interface UserModel extends IdentityModel {
 	public function getUsername():string;

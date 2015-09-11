@@ -1,6 +1,6 @@
 <?hh
 
-namespace Cnastasi\HD3F\Model;
+namespace Cnastasi\HD2F\Model;
 
 use DateTime;
 

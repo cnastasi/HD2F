@@ -1,8 +1,8 @@
 <?hh 
 
-namespace Cnastasi\HD3F\Factory;
+namespace Cnastasi\HD2F\Factory;
 
-use Cnastasi\HD3F\Model\UserModel;
+use Cnastasi\HD2F\Model\UserModel;
 
 interface UserModelFactory extends ModelFactory<UserModel> {
 	

@@ -1,0 +1,25 @@
+{
+    "name": "cnastasi/hd2f",
+    "description": "Hack Domain Driven Framework.",
+    "keywords": ["framework", "hack", "domain driven"],
+    "license": "GPL2",
+    "type": "library",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Christian Nastasi",
+            "email": "christian.nastasi@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "fzaninotto/faker": "~1.0"
+    },
+    "autoload": {
+        "autoload": [ "src/" ]
+    },
+    "autoload-dev": {
+        "autoload": [ "tests/" ]
+    }
+}

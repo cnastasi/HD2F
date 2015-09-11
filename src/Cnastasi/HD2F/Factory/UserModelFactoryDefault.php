@@ -1,8 +1,8 @@
 <?hh //decl
 
-namespace Cnastasi\HD3F\Factory;
+namespace Cnastasi\HD2F\Factory;
 
-use Cnastasi\HD3F\Model\UserModel;
+use Cnastasi\HD2F\Model\UserModel;
 use Laravel\Lumen\Application;
 
 class UserModelFactoryDefault extends GenericModelFactory<UserModel> implements ModelFactory<UserModel> {

@@ -1,6 +1,6 @@
 <?hh //strict
 
-namespace Cnastasi\HD3F\Repository;
+namespace Cnastasi\HD2F\Repository;
 
 interface Repository<T> {
 	public function find(mixed $id):?T;

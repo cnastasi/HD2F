@@ -1,9 +1,9 @@
 <?hh //decl
 
-namespace Cnastasi\HD3F\Factory;
+namespace Cnastasi\HD2F\Factory;
 
 use Laravel\Lumen\Application;
-use Cnastasi\Model\HD3F\IdentityModel;
+use Cnastasi\Model\HD2F\IdentityModel;
 
 abstract class GenericModelFactory<T as IdetityModel> implements ModelFactory<T> {
 
