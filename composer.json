@@ -17,9 +17,9 @@
         "fzaninotto/faker": "~1.0"
     },
     "autoload": {
-        "autoload": [ "src/" ]
+        "classmap": [ "src/" ]
     },
     "autoload-dev": {
-        "autoload": [ "tests/" ]
+        "classmap": [ "tests/" ]
     }
 }

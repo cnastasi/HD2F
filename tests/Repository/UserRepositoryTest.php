@@ -1,10 +1,11 @@
-<?hh //decl
+<?php
 
 namespace Repository;
 
 use PHPUnit_Framework_TestCase;
+use Cnastasi\HD2F\Repository\UserRepository;
 use Cnastasi\HD2F\Repository\InMemoryUserRepository;
-use Cnastasi\HD2F\Factory\UserModelFactoryDefault;
+use Cnastasi\HD2F\Factory\StaticUserModelFactory;
 
 class UserRepositoryTest extends PHPUnit_Framework_TestCase
 {
@@ -15,10 +16,11 @@ class UserRepositoryTest extends PHPUnit_Framework_TestCase
         parent::setUp();
 
         $this->userRepository   = new InMemoryUserRepository();
-        $this->userModelFactory = new UserModelFactoryDefault();
+        $this->userModelFactory = new StaticUserModelFactory();
     }
     
-    public function testRepository():void {
+    
+    public function testRepository() {
         $user = $this->userModelFactory->create();
 
         $this->userRepository->save($user);
