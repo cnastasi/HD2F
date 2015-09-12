@@ -1,8 +1,10 @@
-<?hh
+<?hh //strict
 
-namespace Cnastasi\HD2F\Model;
+namespace Cnastasi\HD2F\Model; 
 
 use DateTime;
+use Cnastasi\HD2F\UserModel;
+use Cnastasi\HD2F\UserRoleModel;
 
 class UserModelDefault implements UserModel {
 	
@@ -43,11 +45,15 @@ class UserModelDefault implements UserModel {
 		return $this->enabled;
 	}
 
-	public function getCreationDate():DateTime {
+	public function getCreatedAt():DateTime {
 		return $this->creationDate;
 	}
 
-	public function getUpdatingDate():DateTime {
+	public function getUpdatedAt():DateTime {
 		return $this->updatingDate;
+	}
+
+	public function getRole():UserRoleModel {
+		return new UserRoleModelDefault();
 	}
 }

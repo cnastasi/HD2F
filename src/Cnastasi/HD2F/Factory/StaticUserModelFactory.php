@@ -2,7 +2,7 @@
 
 namespace Cnastasi\HD2F\Factory;
 
-use Cnastasi\HD2F\Model\UserModel;
+use Cnastasi\HD2F\UserModel;
 use Cnastasi\HD2F\Model\UserModelDefault;
 
 class StaticUserModelFactory implements UserModelFactory {

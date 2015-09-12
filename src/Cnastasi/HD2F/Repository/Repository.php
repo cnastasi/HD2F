@@ -10,4 +10,6 @@ interface Repository<T> {
 	public function save(T $model):void;
 
 	public function delete(T $model):void;
+
+	public function exists(T $model):bool;
 }

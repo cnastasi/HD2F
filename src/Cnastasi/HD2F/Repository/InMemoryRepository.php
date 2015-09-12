@@ -2,7 +2,7 @@
 
 namespace Cnastasi\HD2F\Repository;
 
-use Cnastasi\HD2F\Model\IdentityModel;
+use Cnastasi\HD2F\IdentityModel;
 
 abstract class InMemoryRepository<T as IdentityModel> implements Repository<T> {
 	private Map<mixed, T> $items;
@@ -29,5 +29,9 @@ abstract class InMemoryRepository<T as IdentityModel> implements Repository<T> {
 
 	public function delete(T $model):void {
 		$this->items->remove($model->getId());
+	}
+
+	public function exists(T $model):bool {
+		return $this->items->contains($model);
 	}
 }
