@@ -1,4 +1,4 @@
-<?php
+<?hh //partial
 
 namespace Repository;
 
@@ -6,25 +6,26 @@ use PHPUnit_Framework_TestCase;
 use Cnastasi\HD2F\Repository\UserRepository;
 use Cnastasi\HD2F\Repository\InMemoryUserRepository;
 use Cnastasi\HD2F\Factory\StaticUserModelFactory;
+use Cnastasi\HD2F\Factory\UserModelFactory;
 
 class UserRepositoryTest extends PHPUnit_Framework_TestCase
-{
-    private UserRepository   $userRepository;
-    private UserModelFactory $userModelFactory;
-
-    public function setUp () {
-        parent::setUp();
-
-        $this->userRepository   = new InMemoryUserRepository();
-        $this->userModelFactory = new StaticUserModelFactory();
-    }
-    
-    
+{     
     public function testRepository() {
-        $user = $this->userModelFactory->create();
+        $userModelFactory = $this->getUserModelFactory();
+        $userRepository   = $this->getUserRepository();
 
-        $this->userRepository->save($user);
+        $user = $userModelFactory->create();
 
-        print_r($this->userRepository->all());
+        $userRepository->save($user);
+
+        static::assertEquals([$user], $userRepository->all());
     } 
+
+    private function getUserModelFactory():UserModelFactory {
+        return new StaticUserModelFactory();
+    }
+
+    private function getUserRepository():UserRepository {
+        return new InMemoryUserRepository();
+    }
 }

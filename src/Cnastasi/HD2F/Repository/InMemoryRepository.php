@@ -20,7 +20,7 @@ abstract class InMemoryRepository<T as IdentityModel> implements Repository<T> {
 	}
 	
 	public function all():array<T> {
-		return $this->items->toArray();
+		return array_values($this->items->toArray());
 	}
 	
 	public function save(T $model):void {
