@@ -4,6 +4,7 @@ namespace Cnastasi\HD2F\Factory;
 
 use Cnastasi\HD2F\Helper\DependencyInjectionContainer;
 use Cnastasi\HD2F\Model\IdentityModel;
+use Cnastasi\HD2F\Model;
 
 final class ContainerAwareFactory implements ModelFactory<mixed> {
 	private DependencyInjectionContainer $container;
