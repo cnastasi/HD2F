@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cnastasi/HD2F.svg?branch=master)](https://travis-ci.org/cnastasi/HD2F)
+
 # HD2F
 Hack Domain Driven Framework
 
