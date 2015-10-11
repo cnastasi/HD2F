@@ -12,6 +12,7 @@ class UserModelDefault implements UserModel {
 
 	private string $username;
 
+	
 	private string $password;
 
 	private bool $enabled;
@@ -29,6 +30,7 @@ class UserModelDefault implements UserModel {
 		$this->updatingDate = new DateTime();
 	}
 
+	<<primaryKey>>
 	public function getId():mixed {
 		return $this->id;
 	}
@@ -37,6 +39,7 @@ class UserModelDefault implements UserModel {
 		return $this->username;
 	}
 
+	<<hidden>>
 	public function getPassword():string {
 		return $this->password;
 	}
