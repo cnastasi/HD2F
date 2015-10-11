@@ -6,8 +6,9 @@ use PHPUnit_Framework_TestCase;
 use Mockery;
 use Mockery\Mock;
 use Mockery\MockeryInterface;
-use Cnastasi\HD2F\Factory\ContainerAwareFactory;
-use Cnastasi\HD2F\Helper\DependencyInjectionContainer;
+use HD2F\Core\Factory\ContainerAwareFactory;
+use HD2F\Core\Helper\DependencyInjectionContainer;
+use HD2F\User\Model\UserModel;
 
 
 class ContainerAwareFactoryTest extends PHPUnit_Framework_TestCase
@@ -48,10 +49,10 @@ class ContainerAwareFactoryTest extends PHPUnit_Framework_TestCase
     }
 
     private function mockContainer () {
-        return Mockery::mock('Cnastasi\HD2F\Helper\DependencyInjectionContainer');
+        return Mockery::mock(DependencyInjectionContainer::class);
     } 
 
     private function mockInstance () {
-        return Mockery::mock('Cnastasi\HD2F\UserModel');
+        return Mockery::mock(UserModel::class);
     }
 }

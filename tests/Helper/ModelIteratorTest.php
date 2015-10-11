@@ -4,10 +4,10 @@ namespace Helper;
 
 use PHPUnit_Framework_TestCase;
 
-use Cnastasi\HD2F\Factory\StaticUserModelFactory;
-use Cnastasi\HD2F\Factory\UserModelFactory;
-use Cnastasi\HD2F\Helper\ModelIterator;
-use Cnastasi\HD2F\Model\UserModelDefault;
+use HD2F\User\Factory\StaticUserModelFactory;
+use HD2F\User\Factory\UserModelFactory;
+use HD2F\Core\Helper\ModelIterator;
+use HD2F\User\Model\UserModelDefault;
 
 class ModelIteratorTest extends PHPUnit_Framework_TestCase
 {     

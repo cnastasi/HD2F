@@ -3,10 +3,10 @@
 namespace Repository;
 
 use PHPUnit_Framework_TestCase;
-use Cnastasi\HD2F\Repository\UserRepository;
-use Cnastasi\HD2F\Repository\InMemoryUserRepository;
-use Cnastasi\HD2F\Factory\StaticUserModelFactory;
-use Cnastasi\HD2F\Factory\UserModelFactory;
+use HD2F\User\Repository\UserRepository;
+use HD2F\User\Repository\InMemoryUserRepository;
+use HD2F\User\Factory\StaticUserModelFactory;
+use HD2F\User\Factory\UserModelFactory;
 
 class UserRepositoryTest extends PHPUnit_Framework_TestCase
 {     
