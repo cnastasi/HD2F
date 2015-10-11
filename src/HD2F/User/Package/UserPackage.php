@@ -6,7 +6,7 @@ use HD2F\User\Model\UserModel;
 use HD2F\User\Model\UserModelDefault;
 
 use HD2F\User\Factory\UserModelFactory;
-use HD2F\Core\Factory\ContainerAwareFactory;
+use HD2F\User\Factory\StaticUserModelFactory;
 
 use HD2F\User\Repository\UserRepository;
 use HD2F\User\Repository\InMemoryUserRepository;
@@ -24,7 +24,7 @@ class UserPackage extends Package {
 		$this->container->registerClass(UserModel::class, UserModelDefault::class);
 
 		$this->container->registerClosure(UserModelFactory::class, function (){
-			return new ContainerAwareFactory($this->container, UserModel::class);
+			return new StaticUserModelFactory();
 		});
 
 		$this->container->registerClass(UserRepository::class, InMemoryUserRepository::class);
