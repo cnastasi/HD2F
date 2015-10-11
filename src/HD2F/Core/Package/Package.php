@@ -1,6 +1,9 @@
-<?hh
+<?hh //strict
 
 namespace HD2F\Core\Package;
+
+use HD2F\Core\Router\Router;
+use HD2F\Core\Helper\DependencyInjectionContainer;
 
 <<__ConsistentConstruct>>
 abstract class Package {
