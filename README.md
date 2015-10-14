@@ -7,7 +7,14 @@ Experimental Framework written in Hacklang and DDD (Domain Driven Design) approa
 
 I'm still studying DDD and Hack, so please help me and give me your contribute if I did something wrong.
 
-Thank you 
+As long there's no stable framework written full in hack and that there are a lot of other great php frameworks that works good on HHVM (like Laravel and Symfony), I do not want to rewrite a new one from the scratch and reinventing the wheel. 
+
+This why this can be called a "meta framework", a generic and abstract framework written in hack that can be extended using a php full working framework. 
+
+Every modern framework have a router, a dependency injection container, some "controller", a serializator. This is basically a standard flow for a rest api. 
+
+This framework abstract this flow and allow then to write a full hack code without reimplements a new framework. 
+
 
 ## Installation
 
